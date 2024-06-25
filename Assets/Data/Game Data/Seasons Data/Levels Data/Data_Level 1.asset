@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b283e29bea313004c9e9de0ab905653e, type: 3}
+  m_Name: Data_Level 1
+  m_EditorClassIdentifier: 
+  spiritStoneStart: 0
+  liveStart: 10
+  mapData:
+    listTowerPositions: []
+  towerInLevel:
+  - towerAllowed: 0000000001000000
+  - towerAllowed: 00000000
+  - towerAllowed: 
+  - towerAllowed: 
+  - towerAllowed: 
+  layoutData:
+    spawnersData:
+    - spawnerID: 0
+      position: {x: 0, y: 7}
+    pathwaysData:
+    - pathwayID: 0
+      startPosition: {x: -3, y: 7}
+      waypoint:
+      - {x: -3, y: 2}
+      - {x: -8, y: 2}
+      - {x: -8, y: -3}
+      - {x: -5, y: -3}
+      - {x: -5, y: 0}
+      - {x: 2, y: 0}
+      - {x: 2, y: -3}
+      - {x: 5, y: -3}
+      - {x: 5, y: 3}
+      - {x: 8, y: 3}
+      - {x: 8, y: -2}
+      - {x: 12, y: -2}
+  listWavesData:
+  - name: Wave 1
+    listMiniWaveData:
+    - name: Wave 1.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - name: Wave 2
+    listMiniWaveData:
+    - name: Wave 2.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - name: Wave 3
+    listMiniWaveData:
+    - name: Wave 3.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - name: Wave 4
+    listMiniWaveData:
+    - name: Wave 4.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+  - name: Wave 5
+    listMiniWaveData:
+    - name: Wave 5.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 01000000010000000100000001000000010000000100000001000000010000000100000001000000
+  - name: Wave 6
+    listMiniWaveData:
+    - name: Wave 6.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  - name: Wave 7
+    listMiniWaveData:
+    - name: Wave 7.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 0100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+  - name: Wave 8
+    listMiniWaveData:
+    - name: Wave 8.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
+  - name: Wave 9
+    listMiniWaveData:
+    - name: Wave 9.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
+  - name: Wave 10
+    listMiniWaveData:
+    - name: Wave 10.1
+      spawnerID: 0
+      pathwayID: 0
+      spawnCooldown: 0.5
+      listMonstersID: 0200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000

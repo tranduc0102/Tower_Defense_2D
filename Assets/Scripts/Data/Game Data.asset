@@ -1,0 +1,131 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 37b338dd7c06622419166e8330ab0591, type: 3}
+  m_Name: Game Data
+  m_EditorClassIdentifier: 
+  towerPrefab: {fileID: 1920712719500648606, guid: 0b75a11bca8d59c48b061bde89317a89, type: 3}
+  prefabData:
+    spawnerPrefab: {fileID: 5939596160883615645, guid: e8a50fbab0561a54e86b41e42039e7b3, type: 3}
+    pathwayPrefab: {fileID: 3772013533200019421, guid: 0de61962e36ce43499ba23f71d9b3642, type: 3}
+    wavePrefab: {fileID: 7354118979846342594, guid: ad2754c1008d9c84b8d447ff56b87437, type: 3}
+    miniWavePrefab: {fileID: 401962047244999911, guid: 010dd62e8f2212241960c63c7173dc73, type: 3}
+    towerPosition: {fileID: 0}
+  listMonsterData:
+  - monsterName: Yellow
+    monsterID: 0
+    sprititStoneAmount: 3
+    damage: 1
+    monsterPrefab: {fileID: 8147625299764523858, guid: e68e87bff060cd04fa0f624cb2d8ef7c, type: 3}
+    maxHP: 2
+    speed: 2.5
+  - monsterName: Blue
+    monsterID: 1
+    sprititStoneAmount: 7
+    damage: 1
+    monsterPrefab: {fileID: 8147625299764523858, guid: d56a64c4c2707b345923450f75d790a4, type: 3}
+    maxHP: 5
+    speed: 2
+  - monsterName: Red
+    monsterID: 2
+    sprititStoneAmount: 10
+    damage: 1
+    monsterPrefab: {fileID: 8147625299764523858, guid: 914b2837fab98a94c9323cf8a1537dfb, type: 3}
+    maxHP: 15
+    speed: 1.5
+  - monsterName: Orange
+    monsterID: 3
+    sprititStoneAmount: 20
+    damage: 1
+    monsterPrefab: {fileID: 8147625299764523858, guid: 6e81bc50fc7173642b80a35388ca6d64, type: 3}
+    maxHP: 25
+    speed: 1.5
+  - monsterName: Green
+    monsterID: 4
+    sprititStoneAmount: 25
+    damage: 1
+    monsterPrefab: {fileID: 8147625299764523858, guid: 4f839c81d8f71ed47a733bd7578f46c9, type: 3}
+    maxHP: 40
+    speed: 1.25
+  - monsterName: Pink
+    monsterID: 5
+    sprititStoneAmount: 50
+    damage: 1
+    monsterPrefab: {fileID: 8147625299764523858, guid: 053a2c8b9e7e30e429125c7087dd152b, type: 3}
+    maxHP: 150
+    speed: 1
+  listTowerData:
+  - towerName: Machine Gun
+    towerID: 0
+    canAirShoot: 0
+    listSpecifications:
+    - name: Machine Gun Level 1
+      spiritStoneToBuy: 100
+      spiritStoneGetWhenSale: 75
+      damage: 1.5
+      caseSprite: {fileID: 21300000, guid: 30158ef3e42c80f47b6c486c2f86b1c7, type: 3}
+      towerSprite: {fileID: 21300000, guid: 86a72c9ad504ce44c87f61fb21cc6e41, type: 3}
+      bulletPrefab: {fileID: 0}
+      cooldown: 0.3
+      shootingRange: 2.5
+    - name: Machine Gun Level 2
+      spiritStoneToBuy: 150
+      spiritStoneGetWhenSale: 150
+      damage: 3
+      caseSprite: {fileID: 21300000, guid: 30158ef3e42c80f47b6c486c2f86b1c7, type: 3}
+      towerSprite: {fileID: 21300000, guid: acce444ae6048da43b2b5e889d30a19b, type: 3}
+      bulletPrefab: {fileID: 0}
+      cooldown: 0.25
+      shootingRange: 3
+  - towerName: Canon
+    towerID: 1
+    canAirShoot: 0
+    listSpecifications:
+    - name: Canon Level 1
+      spiritStoneToBuy: 200
+      spiritStoneGetWhenSale: 150
+      damage: 1.5
+      caseSprite: {fileID: 21300000, guid: 58497f9710ca6a3408245101ecfea049, type: 3}
+      towerSprite: {fileID: 21300000, guid: 1cc2e026bdd9041418e8e8af93c4e131, type: 3}
+      bulletPrefab: {fileID: 0}
+      cooldown: 1.75
+      shootingRange: 3.5
+    - name: Canon Level 2
+      spiritStoneToBuy: 250
+      spiritStoneGetWhenSale: 300
+      damage: 25
+      caseSprite: {fileID: 21300000, guid: 58497f9710ca6a3408245101ecfea049, type: 3}
+      towerSprite: {fileID: 21300000, guid: 1a459594038581b4793311bcb0ef8b97, type: 3}
+      bulletPrefab: {fileID: 0}
+      cooldown: 1.25
+      shootingRange: 5
+  - towerName: Rocket
+    towerID: 2
+    canAirShoot: 0
+    listSpecifications:
+    - name: Rocket Level 1
+      spiritStoneToBuy: 300
+      spiritStoneGetWhenSale: 205
+      damage: 20
+      caseSprite: {fileID: 21300000, guid: 07c26c6e828e10e4db1e291f793880a5, type: 3}
+      towerSprite: {fileID: 21300000, guid: 78cf8961efd63564a8cf20983e34f50a, type: 3}
+      bulletPrefab: {fileID: 0}
+      cooldown: 2.5
+      shootingRange: 6
+    - name: Rocket Level 2
+      spiritStoneToBuy: 400
+      spiritStoneGetWhenSale: 450
+      damage: 50
+      caseSprite: {fileID: 21300000, guid: 07c26c6e828e10e4db1e291f793880a5, type: 3}
+      towerSprite: {fileID: 21300000, guid: d1d4865c651ec2f4f82c7b6b4dd0eca8, type: 3}
+      bulletPrefab: {fileID: 0}
+      cooldown: 2
+      shootingRange: 8
