@@ -133,6 +133,11 @@ public static class EventDispatcherExtension
     {
         EventDispatcher.Instance.PostEvent(eventID, param);
     }
+
+    private static void RegisterListener(this MonoBehaviour listener, EventID onSpawnNextWave)
+    {
+        throw new NotImplementedException();
+    }
 }
 
 #endregion

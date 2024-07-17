@@ -58,6 +58,10 @@ public class Monster : MonoBehaviour
          miniWave.checkIfAllEnermyDead();
          Destroy(gameObject);
       }
+      else
+      {
+         target = miniWave.pathWay.wayPoint[pathIndex];
+      }
    }
 
    private void FixedUpdate()

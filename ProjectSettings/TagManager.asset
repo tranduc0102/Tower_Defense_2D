@@ -41,3 +41,15 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: TowerBase
+    uniqueID: 290616633
+    locked: 0
+  - name: Tower
+    uniqueID: 234422749
+    locked: 0
+  - name: UI
+    uniqueID: 507632053
+    locked: 0
+  - name: UI On Top
+    uniqueID: 4109126953
+    locked: 0

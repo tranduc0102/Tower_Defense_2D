@@ -25,7 +25,7 @@ MonoBehaviour:
   layoutData:
     spawnersData:
     - spawnerID: 0
-      position: {x: 0, y: 7}
+      position: {x: -3, y: 7}
     pathwaysData:
     - pathwayID: 0
       startPosition: {x: -3, y: 7}

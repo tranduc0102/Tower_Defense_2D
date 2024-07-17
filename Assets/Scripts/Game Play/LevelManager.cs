@@ -50,8 +50,14 @@ public class LevelManager : Singleton<LevelManager>
         SpriritStone = levelData.spiritStoneStart;
         Lives = levelData.liveStart;
         CreateSpawnersAndPathways();
+        StartCoroutine(UIManager.Instance.ShowWaveName(0));
     }
 
+    private void OnEnable()
+    {
+        this.RegisterListener(EventID.On_Spawn_Next_Wave,
+            param => OnCreateNextWave((int)param));
+    }
     public void CreateSpawnersAndPathways()
     {
         for (int i = 0; i < levelData.layoutData.spawnersData.Count; i++)
@@ -71,9 +77,35 @@ public class LevelManager : Singleton<LevelManager>
         }
     }
     
+
     //sinh quai cho wave
-    public void CreateWave()
+    public void CreateWave(int waveID)
     {
-        
+        var wave = Instantiate(dataBase.prefabData.wavePrefab);
+        wave.WaveID = waveID;
+        wave.name = "Wave" + (waveID + 1);
+        wave.InitWave(levelData.listWavesData[waveID]);
+        listWaves.Add(wave);
+
+    }
+
+    public void OnCreateNextWave(int waveID)
+    {
+        if (IsPlayerWin(waveID + 1))
+        {
+            return;
+        }
+        waveID++;
+        StartCoroutine(UIManager.Instance.ShowWaveName(waveID));
+    }
+
+    private bool IsPlayerWin(int waveID)
+    {
+        if (waveID >= levelData.listWavesData.Count)
+        {
+            Debug.Log("Win :v");
+            return true;
+        }
+        return false;
     }
 }

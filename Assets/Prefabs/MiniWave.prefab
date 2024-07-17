@@ -43,3 +43,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de12e775bb302cd41a5232911d826f03, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  miniWaveID: 0
+  wave: {fileID: 0}
+  miniWaveData:
+    name: 
+    spawnerID: 0
+    pathwayID: 0
+    spawnCooldown: 0
+    listMonstersID: 
+  listMonsterDatas: []
+  listMonsters: []
+  spawnCoolDown: 0
+  pathWay: {fileID: 0}

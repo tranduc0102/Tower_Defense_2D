@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,7 +25,9 @@ public class MiniWave : MonoBehaviour
         var listMonsterID = data.listMonstersID;
         for (int i = 0; i < listMonsterID.Count; i++)
         {
-            listMonsterDatas.Add(LevelManager.Instance.dataBase.listMonsterData[listMonsterID[i]]);
+            var monster = LevelManager.Instance.dataBase.listMonsterData[listMonsterID[i]];
+            Debug.Log(monster.monsterName);
+            listMonsterDatas.Add(monster);
         }
 
         spawnerTrf = LevelManager.Instance.listSpawners[data.spawnerID].transform;

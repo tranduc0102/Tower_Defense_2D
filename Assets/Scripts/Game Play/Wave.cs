@@ -12,14 +12,14 @@ public class Wave : MonoBehaviour
     public void InitWave(WaveData data)
     {
         waveData = data;
-        listMiniWavesData = waveData.listMiniWaveData;
-
+        listMiniWavesData = data.listMiniWaveData;
         CreateMiniWaves();
     }
 
     public void CreateMiniWaves()
     {
-        for (int i = 0; i < listMiniWaves.Count; i++)
+        
+        for (int i = 0; i < listMiniWavesData.Count; i++)
         {
             SpawnMiniWave(i);
         }
