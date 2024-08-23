@@ -4,11 +4,11 @@ using System.Collections.Generic;
 using DG.Tweening;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class UIManager : MonoBehaviour
+public class UIManager : Singleton<UIManager>
 {
-    public static UIManager Instance;
     public Button hackBtn;
     public Button pauseBtn;
     public Button speedBtn;
@@ -23,6 +23,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private Sprite pauseSprite;
     [SerializeField] private Sprite resumeSprite;
 
+    [Header("UI Pause")] 
+    public GameObject panel;
+    public Button btnHome;
+    public Button btnReplay;
     private void Awake()
     {
         Time.timeScale = timeScale = 1;
@@ -32,40 +36,49 @@ public class UIManager : MonoBehaviour
         waveNameText.text = "Wave 1";
         waveNameText.alpha = 0f;
         waveNumberText.text = "1/" + LevelManager.Instance.levelData.listWavesData.Count;
-        if (Instance != null)
-        {
-            Destroy(gameObject);
-        }
-        else
-        {
-            Instance = this;
-            DontDestroyOnLoad(this);
-        }
     }
 
      private void OnEnable()
      {
-         // this.RegisterListener(EventID.On_Spirit_Stone_Change, param => UpdateSpiritStone((int) param));
-         // this.RegisterListener(EventID.On_Lives_Change,param => UpdateLive((int)param);
+          this.RegisterListener(EventID.On_Spirit_Stone_Change, param => UpdateSpiritStione((int) param));
+          this.RegisterListener(EventID.On_Lives_Change,param => UpdateLives((int)param));
+          this.RegisterListener(EventID.On_Monster_Killed,param =>UpdataSpiritStoneWhileEnemyDead((int)param));
+          this.RegisterListener(EventID.On_Monster_Escaped,param=>UpdateLiveWhenEmenyAttack((int)param));
          // this.RegisterListener(EventID.On_Player_Win,param=>HandlePlayerWin((int)param));
          // this.RegisterListener(EventID.On_Player_Lose,param=>HandlePlayerLose((int)param));
          //
-         hackBtn.onClick.AddListener(() => { LevelManager.Instance.SpriritStone += 1000;});
+         hackBtn.onClick.AddListener(() => { 
+             LevelManager.Instance.SpriritStone += 1000; 
+             LevelManager.Instance.Lives += 5; });
          pauseBtn.onClick.AddListener(() => PauseGame());
          speedBtn.onClick.AddListener(() => ChangGameSpeed());
+         btnHome.onClick.AddListener((() => SceneManager.LoadSceneAsync("Lobby")));
+         btnReplay.onClick.AddListener((() => SceneManager.LoadSceneAsync(SceneManager.GetActiveScene().name)));
      }
      
      private void OnDisable()
      {
-         //this.RemoveListener(EventID.On_Spirit_Stone_Change, param => UpdateSpiritStone((int) param));
+         //this.RemoveListener(EventID.On_Spirit_Stone_Change, param => UpdateSpiritStione((int) param));
          //this.RemoveListener(EventID.On_Lives_Change,param => UpdateLive((int)param);
          //this.RemoveListener(EventID.On_Player_Win,param=>HandlePlayerWin((int)param));
          //this.RemoveListener(EventID.On_Player_Lose,param=>HandlePlayerLose((int)param));
      }
-
      public void UpdateSpiritStione(int amount)
      {
          spiritStioneText.text = amount.ToString();
+     }
+
+     public void UpdataSpiritStoneWhileEnemyDead(int amount)
+     {
+         LevelManager.Instance.SpriritStone += amount;
+     }
+
+     public void UpdateLiveWhenEmenyAttack(int amount)
+     {
+         if (LevelManager.Instance.Lives > 0)
+         {
+             LevelManager.Instance.Lives -= amount;   
+         }
      }
 
      public void UpdateLives(int amount)
@@ -100,12 +113,12 @@ public class UIManager : MonoBehaviour
              Time.timeScale = 0f;
              isPause = true;
              pauseBtn.image.sprite = resumeSprite;
+             panel.SetActive(true);
          }
          else
          {
-             Time.timeScale = timeScale;
-             isPause = false;
-             pauseBtn.image.sprite = pauseSprite;
+             panel.SetActive(false);
+             ResumeGame();
          }
      }
 

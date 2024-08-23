@@ -133,6 +133,15 @@ public static class EventDispatcherExtension
     {
         EventDispatcher.Instance.PostEvent(eventID, param);
     }
+    // Bắn sự kiện có những object hủy đăng kí
+    public static void RemoveListener(this MonoBehaviour listener, EventID eventID, Action<object> callback)
+    {
+        EventDispatcher.Instance.RemoveListener(eventID,callback);
+    } 
+    public static void RemoveListener(this MonoBehaviour listener, EventID eventID)
+    {
+        EventDispatcher.Instance.RemoveListener(eventID);
+    }
 
     private static void RegisterListener(this MonoBehaviour listener, EventID onSpawnNextWave)
     {

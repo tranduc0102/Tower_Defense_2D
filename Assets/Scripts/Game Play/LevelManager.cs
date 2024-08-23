@@ -27,7 +27,7 @@ public class LevelManager : Singleton<LevelManager>
         set
         {
             spriritStone = value;
-            //this.postEvent(EventID.On_spr
+            this.PostEvent(EventID.On_Spirit_Stone_Change,spriritStone);
         }
     }
 
@@ -37,6 +37,7 @@ public class LevelManager : Singleton<LevelManager>
         set
         {
             lives = value;
+            this.PostEvent(EventID.On_Lives_Change,lives);
         }
     }
 
@@ -106,6 +107,7 @@ public class LevelManager : Singleton<LevelManager>
             Debug.Log("Win :v");
             return true;
         }
+        
         return false;
     }
 }

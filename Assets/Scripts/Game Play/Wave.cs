@@ -18,7 +18,6 @@ public class Wave : MonoBehaviour
 
     public void CreateMiniWaves()
     {
-        
         for (int i = 0; i < listMiniWavesData.Count; i++)
         {
             SpawnMiniWave(i);

@@ -26,7 +26,6 @@ public class MiniWave : MonoBehaviour
         for (int i = 0; i < listMonsterID.Count; i++)
         {
             var monster = LevelManager.Instance.dataBase.listMonsterData[listMonsterID[i]];
-            Debug.Log(monster.monsterName);
             listMonsterDatas.Add(monster);
         }
 

@@ -73,7 +73,7 @@ MonoBehaviour:
       damage: 1.5
       caseSprite: {fileID: 21300000, guid: 30158ef3e42c80f47b6c486c2f86b1c7, type: 3}
       towerSprite: {fileID: 21300000, guid: 86a72c9ad504ce44c87f61fb21cc6e41, type: 3}
-      bulletPrefab: {fileID: 0}
+      bulletPrefab: {fileID: 2712714479514951144, guid: 47a44eecf16aca44289e0f0d24ba084d, type: 3}
       cooldown: 0.3
       shootingRange: 2.5
     - name: Machine Gun Level 2
@@ -82,7 +82,7 @@ MonoBehaviour:
       damage: 3
       caseSprite: {fileID: 21300000, guid: 30158ef3e42c80f47b6c486c2f86b1c7, type: 3}
       towerSprite: {fileID: 21300000, guid: acce444ae6048da43b2b5e889d30a19b, type: 3}
-      bulletPrefab: {fileID: 0}
+      bulletPrefab: {fileID: 2712714479514951144, guid: 47a44eecf16aca44289e0f0d24ba084d, type: 3}
       cooldown: 0.25
       shootingRange: 3
   - towerName: Canon
@@ -95,7 +95,7 @@ MonoBehaviour:
       damage: 1.5
       caseSprite: {fileID: 21300000, guid: 58497f9710ca6a3408245101ecfea049, type: 3}
       towerSprite: {fileID: 21300000, guid: 1cc2e026bdd9041418e8e8af93c4e131, type: 3}
-      bulletPrefab: {fileID: 0}
+      bulletPrefab: {fileID: 2712714479514951144, guid: 47a44eecf16aca44289e0f0d24ba084d, type: 3}
       cooldown: 1.75
       shootingRange: 3.5
     - name: Canon Level 2
@@ -104,7 +104,7 @@ MonoBehaviour:
       damage: 25
       caseSprite: {fileID: 21300000, guid: 58497f9710ca6a3408245101ecfea049, type: 3}
       towerSprite: {fileID: 21300000, guid: 1a459594038581b4793311bcb0ef8b97, type: 3}
-      bulletPrefab: {fileID: 0}
+      bulletPrefab: {fileID: 2712714479514951144, guid: 47a44eecf16aca44289e0f0d24ba084d, type: 3}
       cooldown: 1.25
       shootingRange: 5
   - towerName: Rocket
@@ -117,7 +117,7 @@ MonoBehaviour:
       damage: 20
       caseSprite: {fileID: 21300000, guid: 07c26c6e828e10e4db1e291f793880a5, type: 3}
       towerSprite: {fileID: 21300000, guid: 78cf8961efd63564a8cf20983e34f50a, type: 3}
-      bulletPrefab: {fileID: 0}
+      bulletPrefab: {fileID: 2712714479514951144, guid: 47a44eecf16aca44289e0f0d24ba084d, type: 3}
       cooldown: 2.5
       shootingRange: 6
     - name: Rocket Level 2
@@ -126,6 +126,6 @@ MonoBehaviour:
       damage: 50
       caseSprite: {fileID: 21300000, guid: 07c26c6e828e10e4db1e291f793880a5, type: 3}
       towerSprite: {fileID: 21300000, guid: d1d4865c651ec2f4f82c7b6b4dd0eca8, type: 3}
-      bulletPrefab: {fileID: 0}
+      bulletPrefab: {fileID: 2712714479514951144, guid: 47a44eecf16aca44289e0f0d24ba084d, type: 3}
       cooldown: 2
       shootingRange: 8

@@ -12,13 +12,159 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b283e29bea313004c9e9de0ab905653e, type: 3}
   m_Name: Data_Level 2
   m_EditorClassIdentifier: 
-  spiritStoneStart: 300
-  liveStart: 15
+  spiritStoneStart: 1000
+  liveStart: 50
   mapData:
-    listTowerPositions: []
+    listTowerPositions:
+    - {x: 3, y: 0}
+    - {x: 4, y: 0}
+    - {x: 6, y: 0}
+    - {x: 7, y: 0}
+    - {x: 9, y: 0}
+    - {x: -6, y: 0}
+    - {x: -7, y: 0}
+    - {x: -9, y: 0}
+    - {x: 7, y: 1}
+    - {x: 9, y: 1}
+    - {x: -4, y: 1}
+    - {x: -5, y: 1}
+    - {x: -6, y: 1}
+    - {x: -7, y: 1}
+    - {x: -9, y: 1}
+    - {x: 1, y: 2}
+    - {x: 2, y: 2}
+    - {x: 3, y: 2}
+    - {x: 4, y: 2}
+    - {x: 7, y: 2}
+    - {x: 9, y: 2}
+    - {x: -1, y: 2}
+    - {x: -2, y: 2}
+    - {x: -9, y: 2}
+    - {x: 1, y: 3}
+    - {x: 2, y: 3}
+    - {x: 3, y: 3}
+    - {x: 4, y: 3}
+    - {x: 9, y: 3}
+    - {x: -9, y: 3}
+    - {x: 0, y: 4}
+    - {x: 1, y: 4}
+    - {x: 2, y: 4}
+    - {x: 3, y: 4}
+    - {x: 4, y: 4}
+    - {x: 5, y: 4}
+    - {x: -1, y: 4}
+    - {x: -2, y: 4}
+    - {x: -4, y: 4}
+    - {x: -5, y: 4}
+    - {x: -6, y: 4}
+    - {x: -7, y: 4}
+    - {x: -9, y: 4}
+    - {x: 0, y: 5}
+    - {x: 1, y: 5}
+    - {x: 2, y: 5}
+    - {x: 3, y: 5}
+    - {x: 4, y: 5}
+    - {x: 5, y: 5}
+    - {x: 6, y: 5}
+    - {x: 7, y: 5}
+    - {x: 8, y: 5}
+    - {x: 9, y: 5}
+    - {x: -1, y: 5}
+    - {x: -2, y: 5}
+    - {x: -4, y: 5}
+    - {x: -5, y: 5}
+    - {x: -6, y: 5}
+    - {x: -7, y: 5}
+    - {x: -9, y: 5}
+    - {x: 0, y: -1}
+    - {x: 3, y: -1}
+    - {x: 4, y: -1}
+    - {x: 6, y: -1}
+    - {x: 7, y: -1}
+    - {x: 9, y: -1}
+    - {x: -1, y: -1}
+    - {x: -2, y: -1}
+    - {x: -9, y: -1}
+    - {x: 0, y: -2}
+    - {x: 3, y: -2}
+    - {x: 4, y: -2}
+    - {x: 6, y: -2}
+    - {x: 7, y: -2}
+    - {x: -1, y: -2}
+    - {x: -2, y: -2}
+    - {x: -3, y: -2}
+    - {x: -4, y: -2}
+    - {x: -6, y: -2}
+    - {x: -7, y: -2}
+    - {x: -9, y: -2}
+    - {x: 0, y: -3}
+    - {x: 1, y: -3}
+    - {x: 6, y: -3}
+    - {x: 7, y: -3}
+    - {x: 8, y: -3}
+    - {x: 9, y: -3}
+    - {x: -1, y: -3}
+    - {x: -2, y: -3}
+    - {x: -3, y: -3}
+    - {x: -9, y: -3}
+    - {x: 0, y: -4}
+    - {x: 1, y: -4}
+    - {x: 2, y: -4}
+    - {x: 3, y: -4}
+    - {x: 4, y: -4}
+    - {x: 5, y: -4}
+    - {x: 6, y: -4}
+    - {x: 7, y: -4}
+    - {x: 8, y: -4}
+    - {x: 9, y: -4}
+    - {x: -1, y: -4}
+    - {x: -2, y: -4}
+    - {x: -3, y: -4}
+    - {x: -4, y: -4}
+    - {x: -5, y: -4}
+    - {x: -6, y: -4}
+    - {x: -7, y: -4}
+    - {x: -9, y: -4}
+    - {x: -4, y: -3}
+    - {x: 5, y: 0}
+    - {x: 5, y: 2}
+    - {x: 5, y: 3}
+    - {x: 5, y: -1}
+    - {x: 5, y: -2}
+    - {x: 7, y: 3}
+    - {x: 8, y: 3}
+    - {x: 8, y: 0}
+    - {x: 8, y: 1}
+    - {x: 8, y: 2}
+    - {x: 8, y: -1}
+    - {x: 8, y: -2}
+    - {x: 9, y: -2}
+    - {x: 3, y: -3}
+    - {x: 4, y: -3}
+    - {x: 5, y: -3}
+    - {x: 2, y: -3}
+    - {x: 0, y: 0}
+    - {x: -1, y: 0}
+    - {x: -2, y: 0}
+    - {x: -4, y: 0}
+    - {x: -5, y: 0}
+    - {x: -5, y: -2}
+    - {x: -6, y: -3}
+    - {x: -7, y: -3}
+    - {x: -5, y: -3}
+    - {x: -3, y: 5}
+    - {x: -3, y: 4}
+    - {x: -4, y: 2}
+    - {x: -5, y: 2}
+    - {x: -6, y: 2}
+    - {x: -7, y: 2}
+    - {x: -8, y: 2}
+    - {x: -3, y: 2}
+    - {x: -8, y: 0}
+    - {x: -8, y: 1}
   towerInLevel:
   - towerAllowed: 0000000001000000
-  - towerAllowed: 00000000
+  - towerAllowed: 0000000001000000
   - towerAllowed: 
   - towerAllowed: 
   - towerAllowed: 
@@ -27,62 +173,34 @@ MonoBehaviour:
     - spawnerID: 0
       position: {x: -8, y: 7}
     - spawnerID: 1
-      position: {x: -8, y: 7}
+      position: {x: -8, y: -6}
     - spawnerID: 2
-      position: {x: -8, y: 7}
+      position: {x: 10, y: 4}
     pathwaysData:
     - pathwayID: 0
       startPosition: {x: -8, y: 7}
       waypoint:
-      - {x: -8, y: -4}
-      - {x: -5, y: -4}
-      - {x: -5, y: 3}
+      - {x: -8, y: 3}
       - {x: 0, y: 3}
       - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 1, y: -2}
     - pathwayID: 1
-      startPosition: {x: -8, y: 7}
+      startPosition: {x: -8, y: -6}
       waypoint:
-      - {x: -8, y: -4}
-      - {x: -5, y: -4}
-      - {x: -5, y: -2}
-      - {x: 5, y: -2}
-      - {x: 5, y: 3}
-      - {x: 0, y: 3}
+      - {x: -8, y: -1}
+      - {x: -3, y: -1}
+      - {x: -3, y: 1}
       - {x: 0, y: 1}
+      - {x: 1, y: 1}
+      - {x: 1, y: -2}
     - pathwayID: 2
-      startPosition: {x: 0, y: -7}
+      startPosition: {x: 10, y: 4}
       waypoint:
-      - {x: 0, y: -2}
-      - {x: -5, y: -2}
-      - {x: -5, y: 3}
-      - {x: 0, y: 3}
-      - {x: 0, y: 1}
-    - pathwayID: 3
-      startPosition: {x: 0, y: -7}
-      waypoint:
-      - {x: 0, y: -2}
-      - {x: 5, y: -2}
-      - {x: 5, y: 3}
-      - {x: 0, y: 3}
-      - {x: 0, y: 1}
-    - pathwayID: 4
-      startPosition: {x: 8, y: -7}
-      waypoint:
-      - {x: 8, y: -4}
-      - {x: 5, y: -4}
-      - {x: 5, y: 3}
-      - {x: 0, y: 3}
-      - {x: 0, y: 1}
-    - pathwayID: 5
-      startPosition: {x: 8, y: -7}
-      waypoint:
-      - {x: 8, y: -4}
-      - {x: 5, y: -4}
-      - {x: 5, y: -2}
-      - {x: -5, y: -2}
-      - {x: -5, y: 3}
-      - {x: 0, y: 3}
-      - {x: 0, y: 1}
+      - {x: 6, y: 4}
+      - {x: 6, y: 1}
+      - {x: 2, y: 1}
+      - {x: 2, y: -2}
   listWavesData:
   - name: wave 1
     listMiniWaveData:
@@ -102,28 +220,28 @@ MonoBehaviour:
     listMiniWaveData:
     - name: wave 3.1
       spawnerID: 2
-      pathwayID: 4
+      pathwayID: 2
       spawnCooldown: 0.5
       listMonstersID: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   - name: wave 4
     listMiniWaveData:
     - name: wave 4.1
       spawnerID: 2
-      pathwayID: 4
+      pathwayID: 2
       spawnCooldown: 0.5
       listMonstersID: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   - name: wave 5
     listMiniWaveData:
     - name: wave 5.1
       spawnerID: 1
-      pathwayID: 2
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   - name: wave 6
     listMiniWaveData:
     - name: wave 6.1
       spawnerID: 1
-      pathwayID: 3
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   - name: wave 7
@@ -137,7 +255,7 @@ MonoBehaviour:
     listMiniWaveData:
     - name: wave 8.1
       spawnerID: 2
-      pathwayID: 4
+      pathwayID: 2
       spawnCooldown: 0.5
       listMonstersID: 01000000010000000100000001000000010000000100000001000000010000000100000001000000
   - name: wave 9
@@ -163,17 +281,17 @@ MonoBehaviour:
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 11.2
       spawnerID: 2
-      pathwayID: 4
+      pathwayID: 2
       spawnCooldown: 0.5
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 11.3
       spawnerID: 1
-      pathwayID: 2
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
     - name: wave 11.4
       spawnerID: 1
-      pathwayID: 3
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
   - name: wave 12
@@ -185,17 +303,17 @@ MonoBehaviour:
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 12.2
       spawnerID: 2
-      pathwayID: 4
+      pathwayID: 2
       spawnCooldown: 0.5
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 12.3
       spawnerID: 1
-      pathwayID: 2
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 01000000010000000100000001000000010000000100000001000000010000000100000001000000
     - name: wave 12.4
       spawnerID: 1
-      pathwayID: 3
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 01000000010000000100000001000000010000000100000001000000010000000100000001000000
   - name: wave 13
@@ -207,38 +325,38 @@ MonoBehaviour:
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 13.2
       spawnerID: 2
-      pathwayID: 4
+      pathwayID: 2
       spawnCooldown: 0.5
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 13.3
       spawnerID: 1
-      pathwayID: 2
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 13.4
       spawnerID: 1
-      pathwayID: 3
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000
   - name: wave 14
     listMiniWaveData:
     - name: wave 14.1
       spawnerID: 0
-      pathwayID: 1
+      pathwayID: 0
       spawnCooldown: 0.5
       listMonstersID: 0200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 14.2
       spawnerID: 2
-      pathwayID: 5
+      pathwayID: 2
       spawnCooldown: 0.5
       listMonstersID: 0200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 14.3
       spawnerID: 1
-      pathwayID: 2
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
     - name: wave 14.4
       spawnerID: 1
-      pathwayID: 3
+      pathwayID: 1
       spawnCooldown: 0.5
       listMonstersID: 02000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000020000000200000002000000
